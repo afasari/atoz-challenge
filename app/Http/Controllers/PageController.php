@@ -1,0 +1,27 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class PageController extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        return view('page.public.landing');        
+    }
+
+    public function prepaid()
+    {
+        return view('page.public.prepaid');        
+    }
+    public function product()
+    {
+        return view('page.public.product');        
+    }
+}
